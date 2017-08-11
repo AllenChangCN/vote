@@ -65,10 +65,10 @@
     </style>
 </head>
 <body>
-    <div id="#app">
+    <div id="app">
         <example></example>
     </div>
 
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('/js/app.js') }}"></script>
 </body>
 </html>
