@@ -6,7 +6,7 @@
                     <div class="panel-heading">Example Component</div>
 
                     <div class="panel-body">
-                        I'm an example 2!
+                        I'm an example 456!
                     </div>
                 </div>
             </div>
