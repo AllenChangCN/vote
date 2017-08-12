@@ -7,6 +7,7 @@
 
                     <div class="panel-body">
                         I'm an example 456!
+                        I'm an example 456!
                     </div>
                 </div>
             </div>
