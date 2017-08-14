@@ -41968,7 +41968,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "panel-heading"
   }, [_vm._v("Example Component")]), _vm._v(" "), _c('div', {
     staticClass: "panel-body"
-  }, [_vm._v("\n                    I'm an example 456!\n                ")])])])])])
+  }, [_vm._v("\n                    I'm an example 456223!\n                ")])])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
