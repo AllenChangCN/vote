@@ -5,9 +5,17 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+import VueRouter from 'vue-router'
+import VueResource from 'vue-resource' //注册两个插件
+import Vue from 'vue'
+import Element from 'element-ui'
 require('./bootstrap');
 
 window.Vue = require('vue');
+
+Vue.use(VueResource);
+Vue.use(VueRouter);
+Vue.use(Element);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -16,7 +24,38 @@ window.Vue = require('vue');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('vote', require('./components/vote.vue'));
+
+
+const routes=[
+    {
+        path:'/', component: require('./components/voteMain.vue'),
+        children:[
+            {
+                path:'vote',
+                component: require('./components/vote.vue'),
+            },
+            {
+                path:'history',
+                component: require('./components/history.vue'),
+            },
+            {
+                path:'advice',
+                component: require('./components/advice.vue'),
+            },
+            {
+                path:'other',
+                component: require('./components/other.vue'),
+            }
+        ]
+    }
+]
+
+const router = new VueRouter({
+    routes: routes
+});
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router: router,
 });
