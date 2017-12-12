@@ -9,6 +9,7 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource' //注册两个插件
 import Vue from 'vue'
 import Element from 'element-ui'
+import Calendar from './module/Calendar.vue'
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -16,6 +17,8 @@ window.Vue = require('vue');
 Vue.use(VueResource);
 Vue.use(VueRouter);
 Vue.use(Element);
+Vue.use(Calendar);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
