@@ -1,30 +1,25 @@
 <template>
     <div id="other">
         this is the compnent other!
-<<<<<<< HEAD
         <el-row :gutter="20">
            <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
            <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
            <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
         </el-row>
-=======
-        <Calendar
-                :value="value"
-                :disabled-days-of-week="disabled"
-                :format="format"
-                :clear-button="clear"
-                :placeholder="placeholder"
-                :pane="2"
-                :has-input="false"
-        ></Calendar>
->>>>>>> 50dab93d41e591e58cf9c0dde2717a133148e02d
+        <!--<Calendar-->
+                <!--:value="value"-->
+                <!--:disabled-days-of-week="disabled"-->
+                <!--:format="format"-->
+                <!--:clear-button="clear"-->
+                <!--:placeholder="placeholder"-->
+                <!--:pane="2"-->
+                <!--:has-input="false"-->
+        <!--&gt;</Calendar>-->
     </div>
 
 </template>
 
 <script>
-<<<<<<< HEAD
-
 </script>
 
 <style>
